@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header-logo">
+          <a href="index.html"><img src="#" alt="top-logo" /></a>
+        </div>
+        <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              Гостиницы
+            </li>
+          </ul>
+      </div>
+    </header>
+
+    <main class="container">
+        <section class="booking-filters-form">
+          <form name="booking" action="https://echo.htmlacademy.ru" method="get">
+            <div class="form-section">
+              <b class="form-section-name">Инфраструктура:</b>
+              <label>
+                <input type="checkbox" name="waterpool">Бассейн
+              </label>
+              <label>
+                <input type="checkbox" name="parking">Парковка
+              </label>
+              <label>
+                <input type="checkbox" name="wifi">Wi-Fi
+              </label>
+            </div>
+            <div class="form-section">
+              <b class="form-section-name">Тип жилья</b>
+              <label>
+                <input type="checkbox" name="hotel">Гостиница
+              </label>
+              <label>
+                <input type="checkbox" name="motel">Мотель
+              </label>
+              <label>
+                <input type="checkbox" name="apartment">Апартаменты
+              </label>
+            </div>
+            <div class="form-section">
+              <b class="form-section-name">Стоимость в сутки (р):</b>
+              <label>От:
+                <input type="text" name="price-min">
+              </label>
+              <label>До:
+                <input type="text" name="price-max">
+              </label>
+            </div>
+              <button class="btn" type="submit">Найти</button>
+          </form>
+        </section>
+
+        <section class="booking-search-results">
+          <div class="result-count">
+            <b class="result-count-name">Найдено: 3</b>
+          </div>
+          <div class="results-sorting">
+            <p>Сортировка:</p>
+            <
+          </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-hashtag">
+          <p>#VISITSEDONA</p>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-yotube" href="#">Youtube</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by<a href="http://htmlacademy.ru"><img src="https://htmlacademy.ru/static/img/htmlacademy.svg" style="background-color: gray" width="100"></a>
+        </section>
+
+      </div>
+    </footer>
+
+
+  </body>
+</html>
