@@ -1,0 +1,72 @@
+body {
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  font-family: "PT-Sans", arial;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  font-family: "PT-Sans", arial;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: "PT-Sans", arial;
+}
+
+.page-container {
+  width: 1200px;
+  /**outline: 1px solid black;**/
+}
+
+header {
+  position: relative;
+  outline: 1px solid green;
+}
+
+header::after {
+  content: "";
+  clear: both;
+}
+
+.header-logo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -69px;
+}
+
+.top-menu ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-menu-left {
+  float: left;
+}
+
+.top-menu-right {
+  float: right;
+}
+
+.top-menu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main {
+  outline: 1px solid red;
+}
+
+.intro {
+  background-image: url("../img/intro-background.jpg");
+}
+
+footer {
+  outline: 1px solid blue;
+}
