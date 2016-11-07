@@ -3,27 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400&subset=cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body class="page-container">
 
-    <header class="page-header">
-        <div class="main-header-logo">
-          <a href="index.html"><img src="#" alt="top-logo" /></a>
-        </div>
-        <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a> <!--Я не делал ссылку в этом пункте, т.к. мы уже находимся на этой странице и я посчитал, что переход не нужен-->
-            </li>
-          </ul>
+    <header class="page-header clearfix">
+      <div class="header-logo">
+        <a href="index.html"><img src="img/top-logo.png" alt="top-logo" width="138" height="70" /></a>
+      </div>
+      <nav class="top-menu">
+        <ul class="top-menu-left">
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+        </ul>
+        <ul class="top-menu-right">
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-content">
@@ -150,19 +156,20 @@
     </main>
 
     <footer class="page-footer">
-        <section class="footer-hashtag">
-          <p>#VISITSEDONA</p>
-        </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yotube" href="#">Youtube</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Website by<a href="http://htmlacademy.ru">
-            <img src="https://htmlacademy.ru/static/img/htmlacademy.svg" style="background-color: gray" width="100"></a>
-            <!--Инлайн в картинке выше временный, чтобы белый svg-логотип было видно -->
-        </section>
+      <section class="footer-item footer-hashtag">
+        <p>#VISITSEDONA</p>
+      </section>
+      <section class="footer-item footer-social">
+        <a class="social-btn social-btn-tw" href="#">
+          <img src="img/twitter-icon.png" alt="Twitter">
+        </a>
+        <a class="social-btn social-btn-fb" href="img/facebook-icon.png">Facebook</a>
+        <a class="social-btn social-btn-yotube" href="img/youtube-icon.png">Youtube</a>
+      </section>
+      <section class="footer-item footer-copyright">
+        <p>Website by<a href="http://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="HTML Academy.ru" style="background-color: gray" width="100"></a></p>
+        <!--Инлайн в картинке выше временный, чтобы белый svg-логотип было видно -->
+      </section>
     </footer>
 
   </body>
