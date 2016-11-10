@@ -33,85 +33,96 @@
     </header>
 
     <main class="page-content">
-        <section class="booking-filters-form">
+        <section class="booking-filters-form clearfix">
           <form name="booking" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form-section">
-              <legend class="form-section-name">Инфраструктура:</legend>
-                <input type="checkbox" name="waterpool" id="waterpool">
-                <label for="waterpool">Бассейн</label>
-                <input type="checkbox" name="parking" id="parking">Парковка
-                <label for="parking">Парковка</label>
-                <input type="checkbox" name="wifi" id="wifi">Wi-Fi
-                <label for="wifi">Wi-Fi</label>
-            </fieldset>
-            <fieldset class="form-section">
-              <legend class="form-section-name">Тип жилья:</legend>
-                <input type="checkbox" name="hotel" id="hotel">
-                <label for="hotel">Гостиница</label>
-                <input type="checkbox" name="motel" id="motel">
-                <label for="motel">Мотель</label>
-                <input type="checkbox" name="apartment" id="apartment">
-                <label for="apartment">Апартаменты</label>
-            </fieldset>
-            <fieldset class="form-section">
-              <legend class="form-section-name">Стоимость в сутки (р):</legend>
-                <input type="text" name="price-min" id="price-min">
-                <label for="price-min">От:</label>
-                <input type="text" name="price-max">
-                <label for="price-max">До:</label>
-            </fieldset>
+            <!-- <div class="filters-column-infrastructure"> -->
+              <fieldset class="filters-column-infrastructure">
+                <legend class="form-section-name">Инфраструктура:</legend>
+                  <input type="checkbox" name="waterpool" id="waterpool" checked>
+                  <label for="waterpool">Бассейн</label><br>
+                  <input type="checkbox" name="parking" id="parking">Парковка
+                  <label for="parking">Парковка</label><br>
+                  <input type="checkbox" name="wifi" id="wifi">Wi-Fi
+                  <label for="wifi">Wi-Fi</label><br>
+              </fieldset>
+            <!-- </div> -->
+            <!-- <div class="filters-column-housing"> -->
+              <fieldset class="filters-column-housing">
+                <legend class="form-section-name">Тип жилья:</legend>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label><br>
+                  <input type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label><br>
+                  <input type="checkbox" name="apartment" id="apartment" checked>
+                  <label for="apartment">Апартаменты</label><br>
+              </fieldset>
+            <!-- </div> -->
+            <div class="filters-column-price">
+              <fieldset class="form-section">
+                <legend class="form-section-name">Стоимость в сутки (р):</legend>
+                  <label for="price-min">От:</label>
+                  <input type="text" name="price-min" id="price-min"><br>
+                  <label for="price-max">До:</label>
+                  <input type="text" name="price-max">
+              </fieldset>
               <button class="btn" type="submit">Показать</button>
+            </div>
           </form>
         </section>
         <section class="search-results">
-          <div class="search-result-count">
-            <b class="search-result-count-name">Найдено: 3</b>
-          </div>
-          <div class="results-sorting">
-            <p>Сортировка:</p>
-            <ul>
-              <li>Сортировка:</li>
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По рейтингу</a></li>
-            </ul>
-            <div class="sorting-direction">
-              <a class="up" href="#"></a>
-              <a class="down" href="#"></a>
+          <div class="search-top clearfix">
+            <div class="search-result-count">
+              <b class="search-result-count-name">Найдено: 3</b>
+            </div>
+            <div class="results-sorting">
+              <ul>
+                <li>Сортировка:</li>
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
+              </ul>
+            </div>
+            <div class="results-sorting-direction">
+              <a class="arrow up" href="#">&uarr;</a>
+              <a class="arrow down" href="#">&darr;</a>
             </div>
           </div>
-          <div class="search-result-item">
+          <div class="search-result-item clearfix">
             <div class="item-photo">
-              <img src="#" alt="Фото жилья">
+              <img src="img/amara-preview.jpg" alt="Фото жилья">
             </div>
             <div class="item-details">
               <b>Amara Resort & Spa</b>
-              <span>Гостиница</span>
-              <span>От 3500 р.</span>
+              <div class="item-details-info">
+                <span>Гостиница</span>
+                <span>От 3500 р.</span>
+              </div>
               <a class="btn btn-details" href="#">Подробнее</a>
               <a class="btn btn-booking" href="#">Забронировать</a>
             </div>
             <div class="item-rating">
               <div class="rating-stars">
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
               <div class="item-rating-value">
                 <p>Рейтинг: 8,5</p>
               </div>
             </div>
           </div>
-          <div class="search-result-item">
+          <div class="search-result-item clearfix">
             <div class="item-photo">
-              <img src="#" alt="Фото жилья">
+              <img src="img/desert-quail-preview.jpg" alt="Фото жилья">
             </div>
             <div class="item-details">
               <b>Desert Quail Inn</b>
-                  <span>Мотель</span>
-                  <span>От 2000 р.</span>
+              <div class="item-details-info">
+                <span>Мотель</span>
+                <span>От 2000 р.</span>
+              </div>
               <a class="btn btn-details" href="#">Подробнее</a>
               <a class="btn btn-booking" href="#">Забронировать</a>
             </div>
@@ -128,24 +139,26 @@
               </div>
             </div>
           </div>
-          <div class="search-result-item">
+          <div class="search-result-item clearfix">
             <div class="item-photo">
-              <img src="#" alt="Фото жилья">
+              <img src="img/villas-et-poco-diablo-preview.jpg" alt="Фото жилья">
             </div>
             <div class="item-details">
               <b>Villas at Poco Diablo</b>
+              <div class="item-details-info">
                 <span>Аппартаменты</span>
                 <span>От 4000 р.</span>
+              </div>
               <a class="btn btn-details" href="#">Подробнее</a>
               <a class="btn btn-booking" href="#">Забронировать</a>
             </div>
             <div class="item-rating">
               <div class="rating-stars">
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
-                <span  class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
               <div class="item-rating-value">
                 <p>Рейтинг: 8,5</p>

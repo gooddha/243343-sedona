@@ -195,20 +195,100 @@ main {
   margin-bottom: 25px;
 }
 
-)
+/*)
  {
   width: 70%;
   margin-bottom: 20px;
-}
+}*/
 
 .booking-form-name a{
   text-decoration: none;
   font-weight: bold;
 }
 
+.booking-filters-form {
+  min-height: 217px;
+  color: white;
+  text-align: left;
+  background: #7594b3 url("../img/filters-background.jpg");
+}
+
+.booking-filters-form legend {
+  font-weight: bold;;
+}
+
+fieldset {
+  border-color: transparent;;
+}
+
+.filters-column-infrastructure,
+.filters-column-housing {
+  float: left;
+  width: 200px;
+}
+
+.filters-column-price {
+  float: right;
+  margin-right: 73px;
+  width: 328px;
+}
+
+.search-top {
+  min-height: 86px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result-count {
+  float: left;
+  width: 140px;
+}
+
+.results-sorting {
+  float: left;
+  width: 395px;
+}
+
+.results-sorting li {
+  display: inline-block;
+}
+
+.results-sorting-direction {
+  float: right;
+  width: 35px;
+}
+
+.results-sorting-direction a{
+  text-decoration: none;
+}
+
+.search-result-item {
+  min-height: 150px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.item-photo {
+  float: left;
+  width: 135px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.item-details {
+  float: left;
+  width: 400px;
+  text-align: left;
+}
+
+.item-details b {
+  display: block;
+}
+
+.item-rating {
+  float: right;
+}
+
 footer {
   z-index: 100;
-  outline: 1px solid blue;
   background-color: rgba(0, 0, 50, 0.1);
 }
 
