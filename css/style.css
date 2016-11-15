@@ -137,14 +137,18 @@ margin-bottom: 33px;
 }
 
 .reasons-item {
+  float: left;
+  width: 400px;
+  min-height: 256px;
   background-color: #81b3d2;
-
 }
 
 .reasons-item-info {
+  width: 400px;
+  padding: 0 50px;
   padding-top: 54px;
   min-height: 202px;
-  width: 400px;
+  margin-bottom:
   background-color: #81b3d2;
 }
 
@@ -163,28 +167,33 @@ margin-bottom: 33px;
 }
 
 .reasons-item-image {
+  float: left;
   width: 800px;
 }
 
 .features {
+  float: left;
   padding: 0;
   margin: 0;
 }
 
 .features-item {
+  padding: 0 50px;
+  width: 400px;
+  height: 330px;
+  float: left;
+  list-style-type: none;
   padding-top: 40px;
   background-color: #ffffff;
   background-image: url("../img/housing-icon.png");
   background-repeat: no-repeat;
   background-position: 50% center;
+
 }
 
-.features li {
-  width: 400px;
-  height: 330px;
-  float: left;
-  list-style-type: none;
-}
+/*.features li {
+
+}*/
 
 .gray {
   background-color: #eeeeee;
