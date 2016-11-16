@@ -239,6 +239,14 @@ margin-bottom: 33px;
 
 .booking {
   position: relative;
+  min-height: 291px;
+  padding-top: 55px;
+  /*margin-bottom: 24px;*/
+}
+
+.booking p {
+  margin: 28px auto;
+  line-height: 24px;
 }
 
 .booking-title {
@@ -246,30 +254,34 @@ margin-bottom: 33px;
   line-height: 24px;
 }
 
-.booking-form {
-  width: 482px;
-  height: 568px;
+.booking-form-container {
+  width: 568px;
+
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  top: 205px;
+  margin: 0 auto;
   left: 0;
   right: 0;
-  background: white;
+  background: #ffffff;
 }
 
-.booking-form form {
+.booking-form-container form {
+  display: block;
   width: 100%;
+  min-height: 480px;
 }
 
 .booking-form-name {
-  vertical-align: middle;
   background-color: #766357;
-  height: 56px;
-  padding-top: 35px;
-  margin-bottom: 25px;
+  min-height: 56px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.booking-form-name a{
+.booking-form-name a {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 26px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -356,7 +368,8 @@ fieldset {
 }
 
 .booking-map {
-  /*padding-bottom: */
+  width: 1200px;
+  height: 593px;
 }
 
 footer {
