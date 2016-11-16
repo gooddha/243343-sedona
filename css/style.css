@@ -117,7 +117,7 @@ main {
 }
 
 .content {
-  padding-top: 60px
+  padding-top: 59px
 }
 
 .content-top {
@@ -125,18 +125,18 @@ margin-bottom: 33px;
 }
 
 .content-top h2{
-  margin: 0;
-}
-
-.content-reasons {
+  margin: 0 auto;
+  width: 530px;
 }
 
 .reasons-title {
   margin-top: 15px;
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .reasons-item {
+  margin: 0;
+  padding: 0;
   float: left;
   width: 400px;
   min-height: 256px;
@@ -145,30 +145,40 @@ margin-bottom: 33px;
 
 .reasons-item-info {
   width: 400px;
-  padding: 0 50px;
+  padding: 0 47px;
   padding-top: 54px;
   min-height: 202px;
-  margin-bottom:
-  background-color: #81b3d2;
+  /*margin-bottom:*/
+  /*background-color: #81b3d2;*/
 }
 
-.reasons-item-info h2 {
-  margin-top: 0;
+.reasons-item-info h2,
+.small-reasons-item h2 {
+  margin: 0 auto;
+  width: 150px;
   margin-bottom: 26px;
   line-height: 21px;
-}
-
-.reason-left {
-  float: left;
-}
-
-.reason-right {
-  float: right;
 }
 
 .reasons-item-image {
   float: left;
   width: 800px;
+  height: 256px;
+}
+
+.reason-number {
+  margin-bottom: 23px;
+}
+
+.reasons-item-info p,
+.features-item p,
+.small-reasons-item p {
+  line-height: 21px;
+}
+
+.small-reasons-item p {
+  margin: 0 auto;
+  width: 270px;
 }
 
 .features {
@@ -183,20 +193,48 @@ margin-bottom: 33px;
   height: 330px;
   float: left;
   list-style-type: none;
-  padding-top: 40px;
+  padding-top: 158px;
   background-color: #ffffff;
-  background-image: url("../img/housing-icon.png");
   background-repeat: no-repeat;
-  background-position: 50% center;
 
 }
 
-/*.features li {
+.features-item h2 {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
 
-}*/
+.features-item:nth-child(1) {
+  background-image: url("../img/housing-icon.png");
+  background-position: 50% 60px;
+}
 
-.gray {
+.features-item:nth-child(2) {
+  background-image: url("../img/food-icon.png");
+  background-position: 50% 61px;
+}
+
+.features-item:nth-child(3) {
+  background-image: url("../img/souvenir-icon.png");
+  background-position: 50% 56px;
+}
+
+.small-reasons {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.small-reasons-item {
+  padding: 0 50px;
+  width: 400px;
+  height: 256px;
+  float: left;
+  list-style-type: none;
+  padding-top: 48px;
   background-color: #eeeeee;
+  background-repeat: no-repeat;
+  background-position: 50% 60px;
 }
 
 .booking {
