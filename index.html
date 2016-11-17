@@ -98,32 +98,33 @@
         <section class="booking">
           <b class="booking-title">Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="booking-form-name">
+            <a class="booking-form-href white-text" href="#">Поиск гостиницы в Седоне</a>
+          </div>
           <div class="booking-form-container">
-            <div class="booking-form-name">
-              <a class="white-text"  href="#">Поиск гостиницы в Седоне</a>
+            <div class="booking-form">
+              <form name="booking" action="https://echo.htmlacademy.ru" method="get">
+                <p>
+                  <label for="arrival-date">Дата заезда:</label>
+                  <input class="date" type="text" size="45" placeholder="24 апреля 2016" name="arrival-date" id="arrival-date">
+                </p>
+                <p>
+                  <label for="departure-date">Дата выезда:</label>
+                  <input class="date" type="text" size="45" placeholder="4 июля 2016" name="departure-date" id="departure-date">
+                </p>
+                <p>
+                <label for="adults">Взрослые:</label>
+                  <button type="button" class="minus">-</button>
+                  <input type="text" size="2" name="adults" id="adults">
+                  <button type="button" class="plus">+</button>
+                <label for="children">Дети:</label>
+                  <button type="button" class="minus">-</button>
+                  <input type="text" size="2" name="children" id="children">
+                  <button type="button" class="plus">+</button>
+                </p>
+                <button class="btn" type="submit">Найти</button>
+              </form>
             </div>
-            <form name="booking" action="https://echo.htmlacademy.ru" method="get">
-              <label>Дата заезда:<br>
-                <input class="date" type="text" size="45" placeholder="24 апреля 2016" name="arrival-date">
-                <br>
-              </label>
-              <label>Дата выезда:<br>
-                <input class="date" type="text" size="45" placeholder="4 июля 2016" name="departure-date">
-                <br>
-              </label>
-              <label>Взрослые:
-                <button type="button" class="minus">-</button>
-                <input type="text" size="2" name="adults">
-                <button type="button" class="plus">+</button>
-              </label>
-              <label>Дети:
-                <button type="button" class="minus">-</button>
-                <input type="text" size="2" name="children">
-                <button type="button" class="plus">+</button>
-              </label>
-              <br>
-              <button class="btn" type="submit">Найти</button>
-            </form>
           </div>
         </section>
       </div>
@@ -149,6 +150,6 @@
         <a href="http://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="HTML Academy.ru" width="114"></a>
       </div>
     </footer>
-
+  <script src="js/script.js"></script>
   </body>
 </html>
