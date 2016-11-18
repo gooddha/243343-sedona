@@ -106,21 +106,27 @@
               <form name="booking" action="https://echo.htmlacademy.ru" method="get">
                 <p>
                   <label for="arrival-date">Дата заезда:</label>
-                  <input class="date" type="text" size="45" placeholder="24 апреля 2016" name="arrival-date" id="arrival-date">
+                  <input class="date" type="text" placeholder="24 апреля 2016" name="arrival-date" id="arrival-date">
+                  <span class="calendar"></span>
                 </p>
                 <p>
                   <label for="departure-date">Дата выезда:</label>
-                  <input class="date" type="text" size="45" placeholder="4 июля 2016" name="departure-date" id="departure-date">
+                  <input class="date" type="text" placeholder="4 июля 2016" name="departure-date" id="departure-date">
+                  <span class="calendar"></span>
                 </p>
                 <p>
-                <label for="adults">Взрослые:</label>
-                  <button type="button" class="minus">-</button>
-                  <input type="text" size="2" name="adults" id="adults">
-                  <button type="button" class="plus">+</button>
-                <label for="children">Дети:</label>
-                  <button type="button" class="minus">-</button>
-                  <input type="text" size="2" name="children" id="children">
-                  <button type="button" class="plus">+</button>
+                  <div class="adults-qty">
+                    <label for="adults">Взрослые:</label>
+                    <button type="button" class="qty-btn btn-minus">-</button>
+                    <input class="qty" type="text" placeholder="2" name="adults" id="adults">
+                    <button type="button" class="qty-btn btn-plus">+</button>
+                  </div>
+                  <div class="children-qty">
+                    <label for="children">Дети:</label>
+                    <button type="button" class="qty-btn btn-minus">-</button>
+                    <input class="qty" type="text" placeholder="0" name="children" id="children">
+                    <button type="button" class="qty-btn btn-plus">+</button>
+                  </div>
                 </p>
                 <button class="btn" type="submit">Найти</button>
               </form>
