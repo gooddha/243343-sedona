@@ -24,7 +24,7 @@
         </ul>
         <ul class="top-menu-right">
           <li>
-            <a href="booking.html">Гостиницы</a>
+            <a href="#">Гостиницы</a>
           </li>
           <li>
             <a href="#">Карта штата</a>
@@ -99,35 +99,35 @@
           <b class="booking-title">Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <div class="booking-form-name">
-            <a class="booking-form-show white-text" href="form.html">Поиск гостиницы в Седоне</a>
+            <a class="booking-form-href white-text" href="#">Поиск гостиницы в Седоне</a>
           </div>
-          <div class="booking-form-container modal-content-hide">
+          <div class="booking-form-container">
             <div class="booking-form">
               <form name="booking" action="https://echo.htmlacademy.ru" method="get">
-                <p class="clearfix">
+                <p>
                   <label for="arrival-date">Дата заезда:</label>
                   <input class="date" type="text" placeholder="24 апреля 2016" name="arrival-date" id="arrival-date">
                   <span class="calendar"></span>
                 </p>
-                <p class="clearfix">
+                <p>
                   <label for="departure-date">Дата выезда:</label>
                   <input class="date" type="text" placeholder="4 июля 2016" name="departure-date" id="departure-date">
                   <span class="calendar"></span>
                 </p>
-
-                <div class="adults-qty">
-                  <label for="adults">Взрослые:</label>
-                  <button type="button" class="qty-btn btn-minus">-</button>
-                  <input class="qty" type="text" placeholder="2" name="adults" id="adults" pattern="[0-9]{,3}" maxlength="2">
-                  <button type="button" class="qty-btn btn-plus">+</button>
-                </div>
-                <div class="children-qty">
-                  <label for="children">Дети:</label>
-                  <button type="button" class="qty-btn btn-minus">-</button>
-                  <input class="qty" type="text" placeholder="0" name="children" id="children" pattern="[0-9]{,3}" maxlength="2">
-                  <button type="button" class="qty-btn btn-plus">+</button>
-                </div>
-
+                <p>
+                  <div class="adults-qty">
+                    <label for="adults">Взрослые:</label>
+                    <button type="button" class="qty-btn btn-minus">-</button>
+                    <input class="qty" type="text" placeholder="2" name="adults" id="adults">
+                    <button type="button" class="qty-btn btn-plus">+</button>
+                  </div>
+                  <div class="children-qty">
+                    <label for="children">Дети:</label>
+                    <button type="button" class="qty-btn btn-minus">-</button>
+                    <input class="qty" type="text" placeholder="0" name="children" id="children">
+                    <button type="button" class="qty-btn btn-plus">+</button>
+                  </div>
+                </p>
                 <button class="btn" type="submit">Найти</button>
               </form>
             </div>
