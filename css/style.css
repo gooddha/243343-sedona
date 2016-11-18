@@ -442,12 +442,14 @@ footer {
   vertical-align: middle;
 }
 
-.social-btn:hover {
+.social-btn:hover,
+.btn:hover {
   background-color: #669ec0;
   transition-duration: 0.5s;
 }
 
-.social-btn:active {
+.social-btn:active,
+.btn:active {
   background-color: #5496bd;
   transition-duration: 0.1s;
 }
