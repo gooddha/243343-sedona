@@ -280,11 +280,21 @@ margin-bottom: 33px;
   margin: 0 auto;
   padding-top: 55px;
   position: absolute;
-  top: 291px;
+  /*top: 291px;*/
+  /*bottom: 0px;*/
   left: 0;
   right: 0;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content-show {
+  top: 291px;
+}
+
+.modal-content-hide {
+  bottom: 0px;
+  z-index: -1;
 }
 
 .booking-form {
@@ -303,16 +313,17 @@ margin-bottom: 33px;
 
 .booking-form input[type=text],
 .qty-btn  {
+  display: inline-block;
   margin: 0;
   height: 38px;
   border: 2px solid #f2f2f2;
   background-color: #f2f2f2;
-  font-size: inherit;
+  font-size: 14px;
   line-height: inherit;
-  color: inherit;
+  color: #000000;
   font-family: inherit;
-  text-transform: inherit;
-  font-weight: inherit;
+  text-transform: uppercase;;
+  font-weight: bold;
 }
 
 .booking-form .date {
@@ -332,20 +343,32 @@ margin-bottom: 33px;
   height: 22px;
   background-color: black;
   background: url("../img/calendar-ico") no-repeat;
-
 }*/
 
 .adults-qty {
+  font-size: 0;
   float: left;
 }
 
 .adults-qty label {
-  margin-right: 37px;
+  margin-right: 41px;
 }
 
 .children-qty {
+  font-size: 0;
   float: right;
 }
+
+.adults-qty label,
+.adults-qty .btn,
+.adults-qty input,
+.children-qty label,
+.children-qty .btn,
+.children-qty input {
+  font-size: 14px;
+}
+
+
 
 .children-qty label {
   margin-right: 15px;
@@ -358,6 +381,7 @@ margin-bottom: 33px;
 }
 
 .qty-btn  {
+  /*display: inline-block;*/
   color: #a9a9a9;
 }
 
@@ -367,6 +391,11 @@ margin-bottom: 33px;
 
 .qty-btn:active  {
   color: #81b3d2;
+}
+
+.btn,
+.qty-btn {
+  cursor: pointer;
 }
 
 .booking-form .btn {
@@ -383,7 +412,6 @@ margin-bottom: 33px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-
 }
 
 .booking-filters-form {
