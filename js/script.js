@@ -1,6 +1,7 @@
-var link = document.querySelector(".booking-form-container");
-var modal = document.querySelector(".modal-content");
+var link = document.querySelector(".booking-form-show");
+var modal = document.querySelector(".booking-form-container");
 
-link.addEventlistener("click", function(event)) {
+link.addEventListener("click", function(event) {
   event.preventDefault();
-}
+  modal.classList.toggle("modal-content-show");
+});
