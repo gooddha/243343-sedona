@@ -247,7 +247,7 @@ margin-bottom: 33px;
 }
 
 .booking p {
-  margin: 28px auto;
+  margin: 29px auto;
   line-height: 24px;
 }
 
@@ -345,10 +345,21 @@ margin-bottom: 33px;
   font-weight: bold;
 }
 
+
+
+.booking-form input[type=text]:hover {
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+}
+
+.booking-form input[type=text]:active {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
 .booking-form .date {
   float: right;
   width: 346px;
-  position: relative;
   padding: 12px 12px;
 }
 
@@ -356,13 +367,23 @@ margin-bottom: 33px;
   text-align: center;
 }
 
-/*.calendar {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-color: black;
-  background: url("../img/calendar-ico") no-repeat;
+/*.booking-form p {
+  position: relative;
 }*/
+
+.calendar {
+  position: absolute;
+  /*width: 22px;
+  height: 22px;
+  right: 0;*/
+  background-color: black;
+  /*background: url("../img/calendar-ico") no-repeat;*/
+}
+
+.qty-container {
+  height: 38px;
+  padding-top: 1px;
+}
 
 .adults-qty {
   font-size: 0;
@@ -388,7 +409,7 @@ margin-bottom: 33px;
 }
 
 .children-qty label {
-  margin-right: 15px;
+  margin-right: 28px;
 }
 
 .booking-form .qty,
@@ -429,6 +450,10 @@ margin-bottom: 33px;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+}
+
+.hotels {
+  margin-bottom: 120px;
 }
 
 .booking-filters-form {
