@@ -157,7 +157,7 @@ margin-bottom: 33px;
 .reason-item-container {
   width: 100%;
   min-height: 256px;
-  /*background-color: #81b3d2;*/
+  background-color: #81b3d2;
 }
 
 .reasons-item {
@@ -280,17 +280,26 @@ margin-bottom: 33px;
   background-color: #ffffff;
   min-height: 291px;
   padding-top: 55px;
+}
 
+.booking * {
+  box-sizing: border-box;
 }
 
 .booking p {
   margin: 29px auto;
   line-height: 24px;
+
+}
+
+.booking-proposition {
+  width: 80%;
 }
 
 .booking form,
 .booking input[type="text"] {
   font-weight: bold;
+  /*box-sizing: border-box;*/
 }
 
 .booking-title {
@@ -331,6 +340,7 @@ margin-bottom: 33px;
 }
 
 .booking-form-container {
+  box-sizing: border-box;
   width: 568px;
   min-height: 395px;
   margin: 0 auto;
@@ -405,11 +415,11 @@ margin-bottom: 33px;
 }
 
 .calendar {
-  position: absolute;
+  /*position: absolute;
   width: 22px;
   height: 22px;
   right: 0;
-  background-color: black;
+  background-color: black;*/
   /*background: url("../img/calendar-ico") no-repeat;*/
 }
 
