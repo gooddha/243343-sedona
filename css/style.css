@@ -509,7 +509,8 @@ margin-bottom: 33px;
   min-height: 217px;
   color: white;
   text-align: left;
-  padding-top: 30px;
+  padding-top: 26px;
+  padding-left: 72px;
   background: #7594b3 url("../img/filters-background.jpg");
 }
 
@@ -518,12 +519,14 @@ margin-bottom: 33px;
 }
 
 fieldset {
-  border-color: transparent;;
+  border: none;
+  padding: 0;
+  margin: 0;
+
 }
 
 .form-section-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -533,23 +536,32 @@ fieldset {
 .filters-column-housing {
   float: left;
   width: 200px;
-  margin-left: 72px;
+  margin-right: 55px;
 }
 
 .filters-column-price  {
-  box-sizing: content-box;
+
 }
 
 .filters-column-price {
   float: right;
   margin-right: 73px;
-  width: 330px;
+  width: 316px;
   text-align: left;
 }
 
+.filters-column-price .form-section-title {
+  margin-left: -11px;
+  margin-bottom: 10px;
+}
+
+/*.price-range-filter {
+  width: 320px;
+}*/
+
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -573,7 +585,7 @@ fieldset {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
 
   cursor: pointer;
@@ -581,7 +593,7 @@ fieldset {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 80px;
   padding-left: 65px;
 }
 
@@ -642,7 +654,7 @@ fieldset {
 
 .show-btn {
   display: block;
-  padding: 6px 35px;
+  padding: 6px 30px;
   margin: 0 auto;
   color: #ffffff;
   font-size: 14px;
@@ -661,7 +673,7 @@ fieldset {
 }
 
 .search-top {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   padding: 0 72px;
   min-height: 86px;
   border-bottom: 1px solid #e5e5e5;
@@ -684,7 +696,8 @@ fieldset {
 .results-sorting {
   text-align: left;
   float: left;
-  padding-top: 20px;
+  padding-top: 21px;
+  padding-left: 3px;
 }
 
 .results-sorting ul {
@@ -695,8 +708,15 @@ fieldset {
   display: inline-block;
   font-size: 12px;
   line-height: 18px;
-  margin-right: 30px;
   vertical-align: middle;
+}
+
+.sort-title {
+  margin-right: 35px;
+}
+
+.sort-control  {
+  margin-right: 30px;
 }
 
 .results-sorting a {
@@ -715,10 +735,11 @@ fieldset {
 }
 
 .search-result-item {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   padding: 0 72px;
-  padding-top: 25px;
-  min-height: 150px;
+  padding-top: 24px;
+  padding-bottom: 21px;
+  /*min-height: 150px;*/
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -729,10 +750,6 @@ fieldset {
   overflow: hidden;
   margin-right: 30px;
   margin-top: 6px;
-}
-
-.item-details-container {
-
 }
 
 .item-details {
@@ -753,6 +770,12 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.item-details-info span {
+  display: inline-block;
+  width: 110px;
+  margin-right: 2px;
+}
+
 .item-details .btn {
   /*display: inline-block;*/
   min-height: 27px;
@@ -766,6 +789,7 @@ fieldset {
 
 .item-details .btn-details {
   background-color: #81b3d2;
+  margin-right: 3px;
 }
 
 .item-details .btn-booking {
@@ -820,13 +844,13 @@ footer {
 }
 
 .footer-hashtag {
-  padding-top: 30px;
+  padding-top: 24px;
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
 }
 
 .footer-social {
-
   padding-top: 36px;
   text-align: center;
   font-size: 0;
@@ -872,6 +896,10 @@ footer {
   background-repeat: no-repeat;
 }
 
+.social-btn-twitter {
+  margin-left: 4px;
+}
+
 .social-btn-twitter::before {
   width: 17px;
   height: 15px;
@@ -891,7 +919,7 @@ footer {
 }
 
 .footer-copyright {
-  padding-top: 40px;
+  padding-top: 38px;
   font-size: 0;
 }
 
@@ -900,6 +928,7 @@ footer {
   font-size: 14px;
   display: inline-block;
   vertical-align: middle;
+  margin-right: 8px;
 
 }
 
@@ -908,7 +937,7 @@ footer {
   display: inline-block;
   vertical-align: middle;
   width: 114px;
-  margin-left: 6px;
+  padding-top: 3px;
 }
 
 .footer-copyright svg {
