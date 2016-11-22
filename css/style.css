@@ -348,13 +348,17 @@ margin-bottom: 33px;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
   z-index: -1;
-  transform: translateY(0);
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
+}
+
+
+.modal-content-hide {
+    bottom: 0;
+    transform: translateY(0);
 }
 
 .modal-content-show {
@@ -405,9 +409,11 @@ margin-bottom: 33px;
 }
 
 .booking-form .date {
+  display: block;
   float: right;
   width: 346px;
-  padding: 12px 12px;
+  padding-left: 12px;
+  /*padding: 12px 12px;*/
 }
 
 .booking-form .qty {
@@ -524,8 +530,6 @@ fieldset {
   margin: 0;
 }
 
-
-
 .form-section-title {
   margin-bottom: 9px;
   font-weight: 600;
@@ -551,7 +555,6 @@ fieldset {
 .filters-column-housing input[type="checkbox"] {
   display: none;
 }
-
 
 .filter-checkbox {
   position: relative;
@@ -599,10 +602,6 @@ fieldset {
   margin-left: -11px;
   margin-bottom: 10px;
 }
-
-/*.price-range-filter {
-  width: 320px;
-}*/
 
 .price-controls {
   position: relative;
@@ -908,6 +907,7 @@ fieldset {
   z-index: 0;
   width: 1200px;
   height: 593px;
+  background-image: url("../img/map.jpg");
 }
 
 .booking-map iframe {

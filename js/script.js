@@ -5,7 +5,9 @@ var plus = document.querySelector(".btn-plus");
 var adults = document.querySelector("#adults");
 var children = document.querySelector("#children");
 
-link.addEventListener("click", function(event) {
+modal.classList.add("modal-content-hide");
+
+link.addEventListener("click", function(event) {  
   event.preventDefault();
   modal.classList.toggle("modal-content-show");
 });
@@ -15,11 +17,11 @@ window.addEventListener("keydown", function(event) {
     modal.classList.remove("modal-content-show");
   }
 });
-
-minus.addEventListener("click", function(event) {
-  adults.value = adults.value--;
-  // modal.classList.toggle("modal-content-z-index");
-});
+//
+// minus.addEventListener("click", function(event) {
+//   adults.value = adults.value--;
+//   // modal.classList.toggle("modal-content-z-index");
+// });
 
 
 // var counterLess = modalForm.querySelectorAll(".form-counter-less");
