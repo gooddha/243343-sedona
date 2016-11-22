@@ -1,0 +1,1 @@
+var link=document.querySelector(".booking-form-show"),modal=document.querySelector(".booking-form-container");modal.classList.add("modal-content-hide"),link.addEventListener("click",function(o){o.preventDefault(),modal.classList.toggle("modal-content-show")}),window.addEventListener("keydown",function(o){27===o.keyCode&&modal.classList.remove("modal-content-show")});

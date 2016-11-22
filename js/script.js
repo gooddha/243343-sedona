@@ -1,13 +1,9 @@
 var link = document.querySelector(".booking-form-show");
 var modal = document.querySelector(".booking-form-container");
-var minus = document.querySelector(".btn-minus");
-var plus = document.querySelector(".btn-plus");
-var adults = document.querySelector("#adults");
-var children = document.querySelector("#children");
 
 modal.classList.add("modal-content-hide");
 
-link.addEventListener("click", function(event) {  
+link.addEventListener("click", function(event) {
   event.preventDefault();
   modal.classList.toggle("modal-content-show");
 });
