@@ -399,7 +399,7 @@ margin-bottom: 33px;
   border: 2px solid #ebebeb;
 }
 
-.booking-form input[type=text]:active {
+.booking-form input[type=text]:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -537,11 +537,89 @@ fieldset {
   float: left;
   width: 200px;
   margin-right: 55px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.filters-column-price  {
+.filters-column-infrastructure input[type="checkbox"],
+.filters-column-housing input[type="checkbox"] {
+  display: none;
+}
+
+
+.filter-checkbox {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  margin-bottom: 55px;
+}
+
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 18px;
+  height: 5px;
+  box-shadow: 0 0 2px #688eb3;
+  background-color: #ffffff;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 5px;
+  height: 10px;
+
+  background-color: #ffffff;
+  /*border: 1px solid blue;*/
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+/*.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}*/
+/*input[type="checkbox"]+label:before{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 16px;
+    vertical-align: middle;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
 
 }
+
+input:checked+label:before {
+    background: #1abc9c;
+
+}*/
+
+/*.filters-column-price  {
+
+}*/
 
 .filters-column-price {
   float: right;
