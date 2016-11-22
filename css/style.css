@@ -798,18 +798,55 @@ input:checked+label:before {
 }
 
 .results-sorting a {
+  color: #b2b2b2;
   text-decoration: none;
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.results-sorting .sort-price a{
+  color: #81b3d2;
+  border-bottom: none;
 }
 
 .results-sorting-direction {
   float: right;
-  padding-top: 36px;
-  width: 35px;
+  padding-top: 34px;
+  width: 45px;
+  font-size: 0;
 }
 
 .results-sorting-direction a{
   text-decoration: none;
+}
+
+.arrow {
+  position: relative;
+  display: inline-block;
+  padding: 3px;
+  width: 15px;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  border: 5px solid transparent;
+  border-top: 9px solid #cccccc;
+}
+
+.arrow-up::after {
+  transform: rotate(180deg) translate(2px, 4px);
+}
+
+.arrow-active .arrow::after {
+  border-top-color: #81b3d2;
+}
+
+.arrow:hover::after {
+  border-top-color: #000000;
+}
+
+.arrow:active::after {
+  border-top-color: #81b3d2;
 }
 
 .search-result-item {
@@ -882,15 +919,14 @@ input:checked+label:before {
   margin-bottom: 50px;
 }
 
-.rating-stars .star::before {
-
-  display: inline-block;
-  content: "";
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjI0NSI+CjxwYXRoIGQ9Im01NSwyMzcgNzQtMjI4IDc0LDIyOEw5LDk2aDI0MCIvPgo8L3N2Zz4=);
+.star {
   width: 17px;
   height: 17px;
-  color: blue;
-  background-size: cover;
+  color: transparent;
+}
+
+.star-active {
+  color: #81b3d2;
 }
 
 .item-rating-value {
@@ -905,6 +941,12 @@ input:checked+label:before {
   z-index: 0;
   width: 1200px;
   height: 593px;
+}
+
+.booking-map iframe {
+  width: 100%;
+  height: 593px;
+
 }
 
 footer {
