@@ -421,12 +421,23 @@ margin-bottom: 33px;
 }
 
 .calendar {
-  /*position: absolute;
+  position: absolute;
   width: 22px;
   height: 22px;
   right: 0;
-  background-color: black;*/
-  /*background: url("../img/calendar-ico") no-repeat;*/
+  margin-right: 8px;
+  margin-top: 8px;
+  background-color: black;
+  background: url("../img/calendar-ico.png") no-repeat;
+  cursor: pointer;
+}
+
+.calendar:hover {
+  background: url("../img/calendar-ico-hover.png") no-repeat;
+}
+
+.calendar:active {
+  background: url("../img/calendar-ico-down.png") no-repeat;
 }
 
 .qty-container {
@@ -598,6 +609,10 @@ fieldset {
   text-align: left;
 }
 
+.filters-column-price a {
+  text-decoration: none;
+}
+
 .filters-column-price .form-section-title {
   margin-left: -11px;
   margin-bottom: 10px;
@@ -643,7 +658,7 @@ fieldset {
 
 .price-controls input {
   width: 50px;
-  margin: 0;
+  height: 28px;
 
   color: inherit;
   font: inherit;
@@ -879,15 +894,16 @@ fieldset {
 
 .item-rating {
   float: right;
+  padding-top: 3px;
 }
 
 .rating-stars {
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 .star {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   color: transparent;
 }
 
@@ -898,8 +914,9 @@ fieldset {
 .item-rating-value {
   font-size: 14px;
   line-height: 21px;
-  padding: 0 16px;
+  padding: 2px 16px;
   background-color: #f2f2f2;
+  margin-bottom: 10px;
 }
 
 .booking-map {
