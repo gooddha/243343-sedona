@@ -839,7 +839,6 @@ fieldset {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -860,9 +859,10 @@ fieldset {
 }
 
 .show-btn {
-  display: block;
-  padding: 6px 30px;
-  margin: 0 auto;
+  display: inline-block;
+  width: 73px;
+  padding: 5px 30px;
+  margin-left: 84px;
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
