@@ -14,7 +14,6 @@ body {
   display: block;
 }
 
-
 .sprite-calendar-ico {
     width: 21px;
     height: 22px;
@@ -155,6 +154,18 @@ nav a:hover {
 nav a:active {
   color: #b2b2b2;
   transition-duration: 0.3s;
+}
+
+.menu-item-active {
+  color: #766357;
+}
+
+.menu-item-active:hover {
+  color: #604e43;
+}
+
+.menu-item-active:active {
+  opacity: 0.3;
 }
 
 nav ul {
@@ -545,10 +556,8 @@ margin-bottom: 33px;
 }
 
 .adults-qty label,
-.adults-qty .btn,
 .adults-qty input,
 .children-qty label,
-.children-qty .btn,
 .children-qty input {
   font-size: 14px;
 }
@@ -917,7 +926,16 @@ fieldset {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.results-sorting .sort-price a{
+.results-sorting a:hover {
+  color: #81b3d2;
+}
+
+.results-sorting a:active {
+  color: #000000;
+  border: none;
+}
+
+.results-sorting .sort-active a{
   color: #81b3d2;
   border-bottom: none;
 }
@@ -995,6 +1013,19 @@ fieldset {
   margin-bottom: 10px;
 }
 
+.item-details a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.item-details a:hover {
+  color: #81b3d2;
+}
+
+.item-details a:active {
+  color: #cacaca;
+}
+
 .item-details-info {
   margin-bottom: 20px;
 }
@@ -1021,8 +1052,32 @@ fieldset {
   margin-right: 3px;
 }
 
+.item-details .btn-details:hover {
+  background-color: #669ec0;
+}
+
+.item-details .btn-details:active {
+  background-color: #5496bd;
+}
+
 .item-details .btn-booking {
   background-color: #766357;
+}
+
+.item-details .btn-booking:hover {
+  background-color: #604e43;
+}
+
+.item-details .btn-booking:active {
+  background-color: #503e33;
+}
+
+.item-details .btn:hover {
+ color: #ffffff;
+}
+
+.item-details .btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .item-rating {
